@@ -1,0 +1,14 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex,nofollow"><meta name="theme-color" content="#132f42"><title>IslandLens | Sign-ins</title><link rel="stylesheet" href="/style.css"><script src="/admin.js" defer></script></head>
+<body><div class="home adm">
+<header class="home-nav"><a class="home-brand" href="/"><svg class="home-logo-mark" viewBox="0 0 30 36" width="26" height="32" aria-hidden="true"><path d="M8 32L11 12H19L22 32Z M9 12V6L15 2L21 6V12Z" fill="none" stroke="currentColor" stroke-width="2"/><path d="M5 33H25 M10 22H20 M23 8H29 M1 8H7" stroke="currentColor" stroke-width="2"/></svg> Island<span>Lens</span></a><nav aria-label="Admin"><a href="/">Forge family</a><button class="home-button secondary" id="adm-out" hidden>Sign out</button></nav></header>
+<main class="home-main">
+<section id="adm-gate" class="home-workspace"><p class="home-eyebrow">ADMIN</p><h2>Forge family sign-ins</h2><p>Who signed in to StackForge, BESSForge, CycleForge and GridForge, and how many runs they used.</p>
+<form id="adm-form" class="home-login"><label for="adm-code">Admin code</label><input id="adm-code" type="password" autocomplete="current-password" required><button class="home-button" type="submit">View sign-ins &rarr;</button><p id="adm-err" class="adm-err" role="alert"></p></form></section>
+<section id="adm-board" hidden>
+<div class="adm-head"><div><p class="home-eyebrow">ADMIN &middot; FORGE FAMILY</p><h1>Sign-ins</h1><p class="adm-sub" id="adm-sub"></p></div><div class="adm-tools"><label class="home-sr" for="adm-product">Product</label><select id="adm-product"><option value="">All products</option><option value="stackforge">StackForge</option><option value="bessforge">BESSForge</option><option value="cycleforge">CycleForge</option><option value="gridforge">GridForge</option></select><label class="home-sr" for="adm-q">Search names</label><input id="adm-q" type="search" placeholder="Search names"><button class="home-button" id="adm-refresh" type="button">Refresh</button></div></div>
+<div class="adm-tiles" id="adm-tiles"></div>
+<section class="adm-panel"><h2>People</h2><p class="adm-note">One row per name, product and code. Active means a sign-in or run in the last 30 minutes. Names are typed by the user; the code hint shows which code they used.</p><div class="adm-scroll"><table id="adm-people"></table></div></section>
+<section class="adm-panel"><h2>Recent activity</h2><div class="adm-scroll"><table id="adm-events"></table></div></section>
+</section>
+</main><footer class="home-footer"><span class="home-brand">Island<span>Lens</span></span><p>Private admin page. Not linked from the public site.</p></footer></div></body></html>
